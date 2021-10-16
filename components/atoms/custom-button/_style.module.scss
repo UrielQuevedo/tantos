@@ -1,0 +1,57 @@
+@import 'styles/_general_styling.scss';
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+}
+
+.confirm {
+  background: $confirm;
+  color: #FFFFFF;
+}
+
+.shadow1-confirm {
+ background: $confirm-100;
+}
+
+.shadow2-confirm {
+  background: $confirm-200;
+}
+
+.button {
+  border-radius: 10px;
+  height: 39px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border: 0;
+  cursor: pointer;
+
+  span {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.shadow1 {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  width: 96%;
+  height: 43px;
+}
+
+.shadow2 {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  width: 92%;
+  height: 47px;
+}
