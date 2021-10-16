@@ -1,28 +1,33 @@
+import { Input } from "antd";
 import CustomButton from "../../components/atoms/custom-button/CustomButton";
 
 const CrearUsuario = () => {
   return (
-    <div>
+    <>
+      <h1 className="title">Crear Jugador</h1>
       <div className="container">
         <div className="center">
-          <span className="title">Crear Jugador</span>
-          <span className="title">Completar</span>
+          <div className="formulario">
+            <div className="pisador">
+              <div className="circulo" />
+              <div className="hueco" />
+              <div className="adorno" />
+            </div>
+            <div className="container-form">
+              <label> Nombre </label>
+              <Input placeholder="Ej: ricardo..." className="inputForm" />
+              <label> Apellido </label>
+              <Input placeholder="Ej: fort..." className="inputForm" />
+              <label> Club </label>
+              <Input placeholder="Ej: barcelona..." className="inputForm" />
+              <label> Nro de camiseta </label>
+              <Input placeholder="Ej: 14..." className="inputForm" />
+            </div>
+          </div>
+          <CustomButton text="crear" theme="confirm" />
         </div>
-        <div>Nombre</div>
-        <div>Apellido</div>
-        <div>Club</div>
-        <img
-          alt="Imagen de fondo"
-          src="/crearUsuario.png"
-          className="imageBackground"
-          width={324}
-          height={512}
-        />
       </div>
-      <div className="footer">
-        <CustomButton text="crear" theme="confirm" />
-      </div>
-    </div>
+    </>
   );
 };
 
