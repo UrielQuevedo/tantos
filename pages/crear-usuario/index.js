@@ -1,5 +1,5 @@
-import { Input } from "antd";
 import CustomButton from "../../components/atoms/custom-button/CustomButton";
+import { Button, Input } from "antd";
 
 const CrearUsuario = () => {
   return (

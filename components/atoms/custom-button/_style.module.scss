@@ -2,16 +2,19 @@
 
 .container {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 70%;
 }
 
+.containerShadow {
+  position: relative;
+}
+
 .confirm {
-background: $confirm !important;
-  color: #FFFFFF !important;
+  background: $confirm;
+  color: #FFFFFF;
 }
 
 .shadow1-confirm {
@@ -23,13 +26,10 @@ background: $confirm !important;
 }
 
 .button {
-  border-radius: 10px !important;
-  height: 39px !important;
-  text-align: center;
+  border-radius: 10px;
+  height: 39px;
   width: 100%;
-  position: absolute;
-  top: 0;
-  border: 0 !important;
+  border: 0;
 
   span {
     font-size: 16px;
