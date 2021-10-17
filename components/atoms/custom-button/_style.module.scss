@@ -6,7 +6,7 @@
 
 .confirm {
   background: $confirm;
-  color: #FFFFFF;
+  color: $white;
 }
 
 .shadow1-confirm {
@@ -32,8 +32,8 @@
 
 .confirm:hover, .confirm:focus, .confirm:active {
   text-decoration: none;
-  background: #79CA5D;
-  color: #FFFFFF;
+  background: $confirm-hover;
+  color: $white;
 }
 
 .shadow1 {

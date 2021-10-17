@@ -6,7 +6,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Inicio - Tantos</title>
         <meta
           name="description"
           content="Guardar estadisticas de un jugador de basquet"

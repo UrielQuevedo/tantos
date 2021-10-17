@@ -5,13 +5,13 @@
   font-style: italic;
   font-weight: 300;
   font-family: Roboto;
-  color: #015890;
+  color: $primary;
   font-size: 16px;
   text-transform: capitalize;
 }
 
 .inputForm {
-  border: 1px solid #6D6D6D !important;
+  border: 1px solid $grey-200 !important;
   box-sizing: border-box !important;
   border-radius: 23px !important;
 }
