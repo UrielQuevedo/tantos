@@ -1,0 +1,10 @@
+@import 'styles/_general_styling.scss';
+
+.center {
+  justify-content: center;
+  display: flex;
+  align-items:center;
+  align-content: center;
+  flex-direction: column;
+  width:100%;
+}

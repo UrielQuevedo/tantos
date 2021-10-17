@@ -1,0 +1,54 @@
+@import 'styles/_general_styling.scss';
+
+.formulario {
+  margin: 55px 0 55px 0;
+  background: #FFFDF3;
+  border: 12px solid #8B5413;
+  width: 310px;
+  height: 410px;
+  position: relative;
+}
+
+.pisador {
+  height: 54px;
+  width: 133px;
+  background: #666666;
+  border-radius: 7px;
+  position: absolute;
+  top: -35px;
+  right: 77px;
+}
+
+.hueco {
+  height: 22px;
+  width: 22px;
+  border-radius: 12px;
+  background: #7AB6B5;
+  position: absolute;
+  top: -10px;
+  left: 56px;
+}
+
+.circulo {
+  width: 33px;
+  height: 34px;
+  background: #666666;
+  border-radius: 18px;
+  position: absolute;
+  top: -15px;
+  left: 50.5px;
+}
+
+.adorno {
+  position: absolute;
+  background: #C4C4C4;
+  border-radius: 3px;
+  width: 116px;
+  height: 17px;
+  bottom: 10px;
+  left: 8px;
+}
+
+.containerForm {
+  padding: 40px 12px 0 12px;
+}

@@ -1,13 +1,5 @@
 @import 'styles/_general_styling.scss';
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 70%;
-}
-
 .containerShadow {
   position: relative;
 }
@@ -38,10 +30,17 @@
   }
 }
 
+.confirm:hover, .confirm:focus, .confirm:active {
+  text-decoration: none;
+  background: #79CA5D;
+  color: #FFFFFF;
+}
+
 .shadow1 {
   border-radius: 10px;
   position: absolute;
   top: 0;
+  right: 7px;
   width: 96%;
   height: 45px;
 }
@@ -49,6 +48,7 @@
 .shadow2 {
   position: absolute;
   top: 0;
+  right: 14px;
   border-radius: 10px;
   width: 92%;
   height: 50px;
