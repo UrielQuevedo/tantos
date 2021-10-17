@@ -2,7 +2,7 @@ import Styles from "./_style.module.scss";
 import BigTitle from "components/atoms/big-title/BigTitle";
 import CrearJugadorForm from "../../components/organisms/crear-usuario/CrearJugadorForm";
 
-const TITLE = "Crear Partido";
+const TITLE = "Crear Jugador";
 
 const { container } = Styles;
 
