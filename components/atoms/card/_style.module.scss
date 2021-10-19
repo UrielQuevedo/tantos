@@ -2,13 +2,13 @@
 
 .containerCard {
   position: relative;
-  height: 50px;
+  height: 132px;
 }
 
 .card {
   position: absolute;
   border-radius: 10px;
-  height: 39px;
+  height: 92%;
   width: 100%;
   background: $white;
 }
@@ -20,7 +20,7 @@
   top: 0;
   right: 7px;
   width: 96%;
-  height: 45px;
+  height: 96%;
 }
 
 .shadowCard2 {
@@ -30,6 +30,6 @@
   right: 14px;
   border-radius: 10px;
   width: 92%;
-  height: 50px;
+  height: 100%;
 }
 

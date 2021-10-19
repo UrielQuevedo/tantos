@@ -7,3 +7,43 @@
   height: 100%;
   border-radius: 40px 0px 0px 0px;
 }
+
+.name {
+  font-size: 21px;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.lastname {
+  position: relative;
+  bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: $primary;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.cantidad {
+  position: absolute;
+  top: 25px;
+  left: 150px;
+  color: $background;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.titleContainer {
+  position: relative;
+}
+
+.tablero {
+  position: absolute;
+  z-index: -1;
+  width: 120px;
+  height: 124px;
+  right: 26px;
+  top: 20px;
+}

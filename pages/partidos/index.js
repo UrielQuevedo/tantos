@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const TITLE = "Partidos";
 
-const { container } = Styles;
+const { container, name, lastname, cantidad, titleContainer, tablero } = Styles;
 const variants = {
   hidden: { opacity: 0, x: 0, y: -20 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -24,9 +24,21 @@ const Partidos = () => {
         transition={{ duration: 0.4, type: "easeInOut" }}
         style={{ padding: "10px 0 0 30px" }}
       >
-        <h2>Nombre</h2>
-        <h3>Apellido</h3>
-        <BigTitle type="secondary" title={TITLE} />
+        <h2 className={name}>Ananias</h2>
+        <span className={lastname}>Quevedo</span>
+        <div className={titleContainer}>
+          <BigTitle type="secondary" title={TITLE} />
+          <span className={cantidad}>(0)</span>
+        </div>
+        <motion.img
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0, type: "spring" }}
+          exit={{ opacity: 0, transition: { duration: 0.2 } }}
+          transition={{ duration: 1 }}
+          src="./tablero.png"
+          className={tablero}
+          alt="tablero de basquet"
+        />
       </motion.div>
       <motion.div
         className={container}
@@ -46,7 +58,33 @@ const Partidos = () => {
           variants={variants}
           transition={{ duration: 1, type: "easeInOut" }}
         >
-          <Card>CARD</Card>
+          <Card>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignContent: "center",
+                alignItems: "center",
+                width: "100%",
+                height: "100%",
+                cursor: "pointer",
+              }}
+            >
+              <h3
+                style={{
+                  textAlign: "center",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
+                  color: "#928787",
+                  border: "2px dashed #eae7e7",
+                  padding: "10px",
+                  borderRadius: "10px",
+                }}
+              >
+                + <span style={{ fontSize: "13px" }}>Agregar Partido</span>
+              </h3>
+            </div>
+          </Card>
         </motion.div>
       </motion.div>
     </HeaderLayout>
