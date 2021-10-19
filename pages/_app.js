@@ -2,8 +2,22 @@ import Head from "next/head";
 import "../styles/globals.css";
 import "antd/dist/antd.css";
 import { AnimatePresence } from "framer-motion";
+import Router from "next/router";
 
 function MyApp({ Component, pageProps, router }) {
+  const routeChange = () => {
+    const tempFix = () => {
+      const allStyleElems = document.querySelectorAll('style[media="x"]');
+      allStyleElems.forEach((elem) => {
+        elem.removeAttribute("media");
+      });
+    };
+    tempFix();
+  };
+
+  Router.events.on("routeChangeComplete", routeChange);
+  Router.events.on("routeChangeStart", routeChange);
+
   return (
     <>
       <Head>
