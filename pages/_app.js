@@ -1,8 +1,9 @@
 import Head from "next/head";
 import "../styles/globals.css";
 import "antd/dist/antd.css";
+import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
@@ -17,7 +18,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter initial={true}>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
     </>
   );
 }
