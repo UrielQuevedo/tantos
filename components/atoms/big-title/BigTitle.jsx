@@ -1,9 +1,10 @@
 import Styles from "./_style.module.scss";
+import classNames from "classnames";
 
 const { bigTitle } = Styles;
 
-const BigTitle = ({ title }) => {
-  return <h1 className={bigTitle}>{title}</h1>;
+const BigTitle = ({ title, type }) => {
+  return <h1 className={classNames(bigTitle, Styles[type])}>{title}</h1>;
 };
 
 export default BigTitle;

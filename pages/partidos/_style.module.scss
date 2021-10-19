@@ -1,0 +1,42 @@
+@import 'styles/_general_styling.scss';
+
+.container {
+  width: 100%;
+  padding: 35px 30px;
+  background: $background;
+  height: 100%;
+  border-radius: 40px 0px 0px 0px;
+}
+
+.containerCard {
+  position: relative;
+  height: 50px;
+}
+
+.card {
+  position: absolute;
+  border-radius: 10px;
+  height: 39px;
+  width: 100%;
+  background: $white;
+}
+
+.shadowCard1 {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 96%;
+  height: 45px;
+}
+
+.shadowCard2 {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 0;
+  right: 14px;
+  border-radius: 10px;
+  width: 92%;
+  height: 50px;
+}

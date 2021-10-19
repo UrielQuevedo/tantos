@@ -4,19 +4,21 @@ import PlanillaForm from "../../molecules/planilla-form/PlanillaForm";
 import Planilla from "../../molecules/planilla/Planilla";
 import { Form } from "antd";
 import { RightOutlined } from "@ant-design/icons";
+import { useRouter } from "next/router";
+import { PARTIDOS_URL } from "../../../utils/routes";
 
 const { center } = Styles;
 
 const CrearJugadorForm = () => {
   //TODO: Hacer responsive como si fuera un zoom de 150%
-  //TODO: Acomodar los temas de scss
 
   const [form] = Form.useForm();
+  const router = useRouter();
 
   const onFinish = (values) => {
     //TODO: Guardar datos
-    //TODO: Redirigir a partidos
     console.log(values);
+    router.push(PARTIDOS_URL);
     form.resetFields();
   };
 

@@ -1,9 +1,16 @@
 @import 'styles/_general_styling.scss';
 
 .bigTitle {
-  text-align: center;
-  color: $primary;
   font-size: 36px;
   font-weight: bold;
   margin: 10px 0 10px 0;
 }
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $background;
+}
+
