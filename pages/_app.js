@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import "antd/dist/antd.css";
 import { AnimatePresence } from "framer-motion";
 import Router from "next/router";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps, router }) {
   const routeChange = () => {
@@ -17,6 +18,10 @@ function MyApp({ Component, pageProps, router }) {
 
   Router.events.on("routeChangeComplete", routeChange);
   Router.events.on("routeChangeStart", routeChange);
+
+  useEffect(() => {
+    router.push(window.location.pathname);
+  }, []);
 
   return (
     <>

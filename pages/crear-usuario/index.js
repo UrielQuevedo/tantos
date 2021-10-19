@@ -21,12 +21,7 @@ const CrearUsuario = () => {
         <BigTitle type="primary" title={TITLE} />
       </motion.div>
       <motion.div
-        style={{
-          width: "100%",
-          borderRadius: "42px 42px 0px 0px",
-          background: "#7AB6B5",
-          height: "100%",
-        }}
+        className={container}
         initial={{ opacity: 0, y: 500 }}
         exit={{ opacity: 0, y: 500, transition: { duration: 0.5 } }}
         animate={{ opacity: 1, y: 0 }}

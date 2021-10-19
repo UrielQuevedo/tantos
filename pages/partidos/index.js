@@ -22,6 +22,7 @@ const Partidos = () => {
         exit="exit"
         variants={variants}
         transition={{ duration: 0.4, type: "easeInOut" }}
+        style={{ padding: "10px 0 0 30px" }}
       >
         <h2>Nombre</h2>
         <h3>Apellido</h3>
@@ -38,7 +39,15 @@ const Partidos = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <Card>CARD</Card>
+        <motion.div
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          variants={variants}
+          transition={{ duration: 1, type: "easeInOut" }}
+        >
+          <Card>CARD</Card>
+        </motion.div>
       </motion.div>
     </HeaderLayout>
   );
