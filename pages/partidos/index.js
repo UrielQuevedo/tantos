@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 
 const TITLE = "Partidos";
 
-const { container, name, lastname, cantidad, titleContainer, tablero } = Styles;
+const { container, name, lastname, cantidad, titleContainer, tablero, ball } =
+  Styles;
 const variants = {
   hidden: { opacity: 0, x: 0, y: -20 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -37,6 +38,25 @@ const Partidos = () => {
           transition={{ duration: 1 }}
           src="./tablero.png"
           className={tablero}
+          alt="tablero de basquet"
+        />
+        <motion.img
+          initial={{ opacity: 1, y: 0 }}
+          //animate={{
+          //opacity: 1,
+          //y: 200,
+          //}}
+          exit={{ opacity: 0 }}
+          //transition={{ duration: 1 }}
+          animate={{ y: [-0, 110, 200] }}
+          transition={{
+            times: [0, 0.3, 0.5],
+            delay: 1,
+            duration: 1.5,
+            ease: "easeInOut",
+          }}
+          src="./colorBall.png"
+          className={ball}
           alt="tablero de basquet"
         />
       </motion.div>
