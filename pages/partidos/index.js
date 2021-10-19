@@ -40,25 +40,6 @@ const Partidos = () => {
           className={tablero}
           alt="tablero de basquet"
         />
-        <motion.img
-          initial={{ opacity: 1, y: 0 }}
-          //animate={{
-          //opacity: 1,
-          //y: 200,
-          //}}
-          exit={{ opacity: 0 }}
-          //transition={{ duration: 1 }}
-          animate={{ y: [-0, 110, 200] }}
-          transition={{
-            times: [0, 0.3, 0.5],
-            delay: 1,
-            duration: 1.5,
-            ease: "easeInOut",
-          }}
-          src="./colorBall.png"
-          className={ball}
-          alt="tablero de basquet"
-        />
       </motion.div>
       <motion.div
         className={container}
