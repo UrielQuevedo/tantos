@@ -76,8 +76,8 @@ const Partidos = () => {
                   textTransform: "uppercase",
                   fontWeight: "bold",
                   color: "#928787",
-                  border: "2px dashed #eae7e7",
-                  padding: "10px",
+                  border: "3px dashed #eae7e7",
+                  padding: "25px 65px",
                   borderRadius: "10px",
                 }}
               >
