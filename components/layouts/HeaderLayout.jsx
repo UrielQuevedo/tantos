@@ -9,25 +9,16 @@ const HeaderLayout = ({ title, children }) => {
   };
 
   return (
-    <motion.article
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-      transition={{ duration: 0.4, type: "easeInOut" }}
-      style={{ position: "relative" }}
-    >
-      <>
-        {title && (
-          <Head>
-            <title>{title} - Tantos</title>
-            <meta name="twitter:title" content={title} />
-            <meta property="og:title" content={title} />
-          </Head>
-        )}
-        {children}
-      </>
-    </motion.article>
+    <>
+      {title && (
+        <Head>
+          <title>{title} - Tantos</title>
+          <meta name="twitter:title" content={title} />
+          <meta property="og:title" content={title} />
+        </Head>
+      )}
+      {children}
+    </>
   );
 };
 
