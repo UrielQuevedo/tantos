@@ -1,13 +1,25 @@
 @import 'styles/_general_styling.scss';
 
+.titleContainer {
+  position: relative;
+}
+
+.subText {
+  position: absolute;
+  top: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  left: 9.5rem;
+}
+
 .bigTitle {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
-  margin: 10px 0 10px 0;
+  margin: 0;
 }
 
 .primary {
-  color: $primary;
+  color: $white;
 }
 
 .secondary {

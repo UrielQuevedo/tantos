@@ -1,4 +1,4 @@
-@import 'styles/_general_styling.scss';
+@import "styles/_general_styling.scss";
 
 .containerShadow {
   position: relative;
@@ -10,7 +10,7 @@
 }
 
 .shadow1-confirm {
- background: $confirm-100;
+  background: $confirm-100;
 }
 
 .shadow2-confirm {
@@ -24,13 +24,15 @@
   border: 0;
 
   span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 }
 
-.confirm:hover, .confirm:focus, .confirm:active {
+.confirm:hover,
+.confirm:focus,
+.confirm:active {
   text-decoration: none;
   background: $confirm-hover;
   color: $white;

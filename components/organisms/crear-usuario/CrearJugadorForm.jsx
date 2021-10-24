@@ -3,15 +3,12 @@ import CustomButton from "../../atoms/custom-button/CustomButton";
 import PlanillaForm from "../../molecules/planilla-form/PlanillaForm";
 import Planilla from "../../molecules/planilla/Planilla";
 import { Form } from "antd";
-import { RightOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 import { PARTIDOS_URL } from "../../../utils/routes";
 
 const { center } = Styles;
 
 const CrearJugadorForm = () => {
-  //TODO: Hacer responsive como si fuera un zoom de 150%
-
   const [form] = Form.useForm();
   const router = useRouter();
 
@@ -33,12 +30,7 @@ const CrearJugadorForm = () => {
         <Planilla>
           <PlanillaForm />
         </Planilla>
-        <CustomButton
-          icon={<RightOutlined />}
-          text="crear"
-          theme="confirm"
-          htmlType="submit"
-        />
+        <CustomButton text="inscribir" theme="confirm" htmlType="submit" />
       </Form>
     </div>
   );

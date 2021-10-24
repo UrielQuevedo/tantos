@@ -1,49 +1,22 @@
 @import 'styles/_general_styling.scss';
 
+.titleContainer {
+  margin: 0 0 20px 18px;
+}
+
 .container {
-  width: 100%;
-  padding: 35px 30px;
+  padding: 23px 30px;
   background: $background;
   height: 100%;
+  z-index: 1;
   border-radius: 40px 0px 0px 0px;
-}
-
-.name {
-  font-size: 21px;
-  font-weight: bold;
-  color: $primary;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.lastname {
-  position: relative;
-  bottom: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  color: $primary;
-  margin-top: 0;
-  text-transform: uppercase;
-}
-
-.cantidad {
-  position: absolute;
-  top: 25px;
-  left: 150px;
-  color: $background;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.titleContainer {
-  position: relative;
 }
 
 .tablero {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   width: 120px;
   height: 124px;
-  right: 26px;
-  top: 20px;
+  left: .5rem;
+  top: 4.5rem;
 }

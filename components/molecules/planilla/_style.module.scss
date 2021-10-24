@@ -1,9 +1,9 @@
-@import 'styles/_general_styling.scss';
+@import "styles/_general_styling.scss";
 
 .formulario {
-  margin: 55px 0 55px 0;
-  background: #FFFDF3;
-  border: 12px solid #8B5413;
+  margin: 55px 0 35px 0;
+  background: #fffdf3;
+  border: 12px solid #8b5413;
   width: 310px;
   height: 410px;
   position: relative;
@@ -22,7 +22,7 @@
   height: 22px;
   width: 22px;
   border-radius: 12px;
-  background: #7AB6B5;
+  background: $background;
   position: absolute;
   top: -10px;
   left: 56px;
@@ -38,7 +38,7 @@
 }
 .adorno {
   position: absolute;
-  background: #C4C4C4;
+  background: #c4c4c4;
   border-radius: 3px;
   width: 116px;
   height: 17px;
@@ -53,7 +53,7 @@
   position: absolute;
   width: 44px;
   height: 39px;
-  background: #FFF7D1;
+  background: #fff7d1;
 }
 .doblado2 {
   position: absolute;
@@ -62,14 +62,14 @@
   top: -0.5px;
   left: -0.5px;
   clip-path: polygon(100% 0, 0% 100%, 0 0);
-  background: #8B5413;
+  background: #8b5413;
 }
 
 .dobladoComplicado1 {
   position: absolute;
   width: 44.74px;
   height: 40.5px;
-  background: #8B5413;
+  background: #8b5413;
   clip-path: polygon(0 0, 100% 100%, 100% 0);
   right: -0.5px;
   top: -0.5px;
@@ -78,7 +78,7 @@
   position: absolute;
   width: 44.74px;
   height: 39.5px;
-  background: #F4E38E;
+  background: #f4e38e;
   clip-path: polygon(0 0, 100% 100%, 82% 100%, 33% 50%, 0 18%);
   right: -0.5px;
   top: -0.4px;
@@ -89,13 +89,13 @@
   height: 38.5px;
   right: 1px;
   clip-path: polygon(51% 7%, 83% 100%, 82% 100%, 33% 50%, 0 18%);
-  background: #FFF7CF;
+  background: #fff7cf;
 }
 .dobladoSimple2 {
   position: absolute;
   width: 42.5px;
   height: 27px;
-  background: #FFF7D1;
+  background: #fff7d1;
   bottom: 0;
   right: -0.1px;
   clip-path: polygon(100% 43%, 0% 100%, 100% 100%);
@@ -104,7 +104,7 @@
   position: absolute;
   width: 42.5px;
   height: 27px;
-  background: #FFF7D1;
+  background: #fff7d1;
   bottom: 0;
   left: 0px;
   clip-path: polygon(100% 43%, 0% 100%, 100% 100%);

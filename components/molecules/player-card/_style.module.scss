@@ -1,0 +1,37 @@
+@import 'styles/_general_styling.scss';
+
+.playerCard {
+  background: rgba(34, 52, 117, 0.85);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  margin: 27px 29px;
+  position: relative;
+  z-index: 1;
+  padding: 19px 21px 8px 21px;
+  height: 140px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  color: $white;
+  margin: 0;
+}
+
+.lastname {
+  font-size: 14px;
+  font-weight: 600;
+  color: $white;
+  position: relative;
+  bottom: 6px;
+}
+
+.club {
+  font-size: 14px;
+  font-weight: 600;
+  color: #C4C4C4;
+  width: 30%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
