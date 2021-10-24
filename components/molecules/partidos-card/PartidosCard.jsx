@@ -7,9 +7,11 @@ const {
   clubName,
   gameDate,
   container,
-  containerStats,
+  containerTantos,
   dividerName,
   dividerTantos,
+  divider,
+  containerStats,
 } = Styles;
 
 const PartidosCard = ({ partidos }) => {
@@ -17,21 +19,29 @@ const PartidosCard = ({ partidos }) => {
     <div key={i} style={{ marginBottom: "22px" }}>
       <Card>
         <div className={container}>
-          <div>
-            <span className={clubName}>{club.nombre}</span>
-            <span className={dividerName}>vs</span>
-            <span className={clubName}>{rival.nombre}</span>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div>
+              <span className={clubName}>{club.nombre}</span>
+              <span className={dividerName}>vs</span>
+              <span className={clubName}>{rival.nombre}</span>
+            </div>
+            <div className={containerTantos}>
+              <span className={classNames(tantos, Styles[status])}>
+                {club.tantos}
+              </span>
+              <span className={dividerTantos}>:</span>
+              <span className={classNames(tantos, Styles[status])}>
+                {rival.tantos}
+              </span>
+            </div>
+            <div className={gameDate}>{fecha}</div>
           </div>
+          <div className={divider} />
           <div className={containerStats}>
-            <span className={classNames(tantos, Styles[status])}>
-              {club.tantos}
-            </span>
-            <span className={dividerTantos}>:</span>
-            <span className={classNames(tantos, Styles[status])}>
-              {rival.tantos}
-            </span>
+            <span>30 - T</span>
+            <span>30 - PT</span>
+            <span>30 - PT</span>
           </div>
-          <div className={gameDate}>{fecha}</div>
         </div>
       </Card>
     </div>

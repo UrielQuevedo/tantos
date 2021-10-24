@@ -2,17 +2,35 @@
 
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content:flex-start;
   padding: 17px 24px;
+
   div {
     width: 100%;
   }
 
   span {
     font-weight: bold;
+  }
+
+  .containerStats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerStats > span {
+    color: #7D87F2;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .divider {
+    width: 1px;
+    background: rgba(125, 135, 242, 0.4);
+    height: 50px;
+    margin: 0 20px;
   }
 
   .dividerName {
@@ -28,7 +46,7 @@
     letter-spacing: 0.05em;
   }
 
-  .containerStats {
+  .containerTantos {
     .tantos {
       font-weight: bold;
       font-size: 45px;
@@ -51,10 +69,6 @@
       top: -10px;
     }
   }
-}
-
-.containerStats {
-  margin: -6px 0;
 }
 
 .clubName {
