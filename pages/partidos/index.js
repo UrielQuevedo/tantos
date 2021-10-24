@@ -31,9 +31,6 @@ const Partidos = () => {
         />
       </motion.section>
       <motion.section className={container} {...containerMotion}>
-        <div className={titleContainer}>
-          <BigTitle title={TITLE} type="primary" />
-        </div>
         <PartidosCard partidos={partidos} />
       </motion.section>
     </HeaderLayout>

@@ -1,5 +1,28 @@
 @import "styles/_general_styling.scss";
 
+.titleContainer {
+  display: flex;
+  margin: 0 0 20px 18px;
+}
+
+.titleContainer > h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 20px 0 0;
+  color: #C4C4C4;
+}
+
+.titleSelected {
+  color: $white !important;
+}
+
+.selected {
+  height: 3px;
+  width: 40px;
+  background: #5AECC1;
+  border-radius: 2px;
+}
+
 .container {
   display: flex;
   align-items: center;
