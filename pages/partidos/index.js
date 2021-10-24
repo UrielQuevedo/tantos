@@ -12,12 +12,17 @@ import {
 import PlayerCard from "../../components/molecules/player-card/PlayerCard";
 import PartidosCard from "../../components/molecules/partidos-card/PartidosCard";
 import { PARTIDOS_MOCKUP } from "../../__mockup/partidos.js";
+import { Button } from "antd";
+import { PlusOutlined } from "@ant-design/icons";
+import { useRouter } from "next/router";
+import { CREAR_PARTIDO_URL, goTo } from "../../utils/routes";
 
 const TITLE = "Partidos";
-const { container, tablero, titleContainer } = Styles;
+const { container, tablero, addButton } = Styles;
 
 const Partidos = () => {
   const [partidos, setPartidos] = useState([...PARTIDOS_MOCKUP]);
+  const router = useRouter();
 
   return (
     <HeaderLayout title={TITLE}>
@@ -33,6 +38,13 @@ const Partidos = () => {
       <motion.section className={container} {...containerMotion}>
         <PartidosCard partidos={partidos} />
       </motion.section>
+      <Button
+        type="dashed"
+        shape="circle"
+        icon={<PlusOutlined />}
+        className={addButton}
+        onClick={() => goTo(CREAR_PARTIDO_URL, router)}
+      />
     </HeaderLayout>
   );
 };

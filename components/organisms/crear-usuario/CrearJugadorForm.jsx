@@ -4,7 +4,7 @@ import PlanillaForm from "../../molecules/planilla-form/PlanillaForm";
 import Planilla from "../../molecules/planilla/Planilla";
 import { Form } from "antd";
 import { useRouter } from "next/router";
-import { PARTIDOS_URL } from "../../../utils/routes";
+import { goTo, PARTIDOS_URL } from "../../../utils/routes";
 
 const { center } = Styles;
 
@@ -15,7 +15,7 @@ const CrearJugadorForm = () => {
   const onFinish = (values) => {
     //TODO: Guardar datos
     console.log(values);
-    router.push(PARTIDOS_URL);
+    goTo(PARTIDOS_URL, router);
     form.resetFields();
   };
 
