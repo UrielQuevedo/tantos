@@ -16,7 +16,7 @@ const CrearPartido = () => {
   };
 
   return (
-    <PlantillaLayoutForm title={TITLE}>
+    <PlantillaLayoutForm title={TITLE} redirect={PARTIDOS_URL}>
       <PlanillaForm
         textButton="continuar"
         onFinish={handleOk}

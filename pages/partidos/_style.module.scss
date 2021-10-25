@@ -1,6 +1,7 @@
 @import 'styles/_general_styling.scss';
 
 .container {
+  position: relative;
   padding: 23px 30px;
   background: $background;
   height: 100%;

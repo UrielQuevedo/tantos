@@ -8,6 +8,13 @@
 }
 
 .titleContainer {
+  position: relative;
   text-align: center;
   margin: 20px 0;
+}
+
+.iconBack {
+  position: absolute;
+  left: 38px;
+  bottom: 11px;
 }

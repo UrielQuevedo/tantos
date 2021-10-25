@@ -2,6 +2,12 @@ html,
 body {
   font-family: 'Montserrat', sans-serif !important;
   background-color: #2D4B9E !important;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
 }
 
 * {
