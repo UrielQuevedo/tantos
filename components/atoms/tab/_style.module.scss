@@ -1,6 +1,7 @@
 @import "styles/_general_styling.scss";
 
 .titleSelected {
+  transition: 1s;
   color: $white !important;
 }
 

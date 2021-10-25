@@ -2,7 +2,6 @@ html,
 body {
   font-family: 'Montserrat', sans-serif !important;
   background-color: #2D4B9E !important;
-  overflow: hidden; /* Hide scrollbars */
 }
 
 * {
@@ -12,7 +11,6 @@ body {
 
 #__next {
   height: 100vh;
-
   display: flex;
   flex-direction: column;
 }

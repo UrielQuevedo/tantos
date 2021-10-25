@@ -1,8 +1,9 @@
 import Styles from "./_style.module.scss";
 import classNames from "classnames";
 import Card from "../../atoms/card/Card";
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import TabSection from "../../atoms/tab/TabSection";
+import { useTab } from "../../../hooks/useTab";
 
 const {
   tantos,
@@ -15,26 +16,34 @@ const {
   divider,
   containerStats,
   titleContainer,
-  titleSelected,
-  selected,
 } = Styles;
 
+const TABS = ["Partidos", "Fechas"];
+
 const PartidosCard = ({ partidos }) => {
-  const [tab, setTab] = useState(0);
-  const TABS = ["Partidos", "Fechas"];
+  const { tabSelected, setTabSelected } = useTab();
+
+  const getTabContent = () => {
+    switch (tabSelected) {
+      case 0:
+        console.log("Oranges are $0.59 a pound.");
+        break;
+      case 1:
+        console.log("Mangoes and papayas are $2.79 a pound.");
+        break;
+      default:
+        console.log("No hay tab");
+    }
+  };
 
   return (
     <>
       <div className={titleContainer}>
-        {TABS.map((title, i) => (
-          <TabSection
-            key={i}
-            title={title}
-            tabIndex={i}
-            isSelected={tab === i}
-            setTab={setTab}
-          />
-        ))}
+        <TabSection
+          tabs={TABS}
+          tabSelected={tabSelected}
+          setTabSelected={setTabSelected}
+        />
       </div>
       {partidos.map(({ club, rival, status, fecha }, i) => (
         <div key={i} style={{ marginBottom: "22px" }}>
