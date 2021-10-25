@@ -8,6 +8,7 @@ import {
   containerMotion,
   imageMotion,
   titleMotion,
+  buttonMotion,
 } from "../../utils/constants";
 import PlayerCard from "../../components/molecules/player-card/PlayerCard";
 import PartidosCard from "../../components/molecules/partidos-card/PartidosCard";
@@ -38,13 +39,15 @@ const Partidos = () => {
       <motion.section className={container} {...containerMotion}>
         <PartidosCard partidos={partidos} />
       </motion.section>
-      <Button
-        type="dashed"
-        shape="circle"
-        icon={<PlusOutlined />}
-        className={addButton}
-        onClick={() => goTo(CREAR_PARTIDO_URL, router)}
-      />
+      <motion.div {...buttonMotion}>
+        <Button
+          type="dashed"
+          shape="circle"
+          icon={<PlusOutlined />}
+          className={addButton}
+          onClick={() => goTo(CREAR_PARTIDO_URL, router)}
+        />
+      </motion.div>
     </HeaderLayout>
   );
 };

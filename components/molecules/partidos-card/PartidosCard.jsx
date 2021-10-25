@@ -1,6 +1,8 @@
 import Styles from "./_style.module.scss";
 import classNames from "classnames";
 import Card from "../../atoms/card/Card";
+import { useState } from "react";
+import TabSection from "../../atoms/tab/TabSection";
 
 const {
   tantos,
@@ -18,13 +20,21 @@ const {
 } = Styles;
 
 const PartidosCard = ({ partidos }) => {
+  const [tab, setTab] = useState(0);
+  const TABS = ["Partidos", "Fechas"];
+
   return (
     <>
       <div className={titleContainer}>
-        <h1 className={titleSelected}>
-          Partidos <div className={selected} />
-        </h1>
-        <h1>Fechas</h1>
+        {TABS.map((title, i) => (
+          <TabSection
+            key={i}
+            title={title}
+            tabIndex={i}
+            isSelected={tab === i}
+            setTab={setTab}
+          />
+        ))}
       </div>
       {partidos.map(({ club, rival, status, fecha }, i) => (
         <div key={i} style={{ marginBottom: "22px" }}>
