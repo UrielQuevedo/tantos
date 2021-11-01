@@ -1,0 +1,22 @@
+@import 'styles/_general_styling.scss';
+
+.container {
+  margin-left: 18px;
+  margin-top: 3rem;
+
+  .mt25 {
+    margin-top: 25px;
+  }
+
+}
+
+.buttonContainer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .w8 {
+    width: 80%;
+  }
+}

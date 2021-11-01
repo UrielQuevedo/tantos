@@ -12,15 +12,11 @@ const CrearPartidoForm = () => {
       {crearPartidoInputs.map((inputProps, key) => (
         <PlanillaInput key={key} {...inputProps} />
       ))}
-      <Link href={CREAR_PARTIDO_URL} disabled>
-        <a>
-          <img
-            className={gif}
-            alt="gif"
-            src="https://c.tenor.com/rD0H2xM0p9gAAAAj/dribble-basketball.gif"
-          />
-        </a>
-      </Link>
+      <img
+        className={gif}
+        alt="gif"
+        src="https://c.tenor.com/rD0H2xM0p9gAAAAj/dribble-basketball.gif"
+      />
     </>
   );
 };

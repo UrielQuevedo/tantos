@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "allowJs": true
   },
   "include": [
     "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
     "**/*.scss"
   ],
   "exclude": ["node_modules"]

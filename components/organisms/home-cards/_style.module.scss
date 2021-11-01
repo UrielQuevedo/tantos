@@ -1,0 +1,23 @@
+@import "styles/_general_styling.scss";
+
+.container {
+  position: relative;
+  padding: 30px;
+  background: $background;
+  z-index: 1;
+  border-radius: 40px 0px 0px 0px;
+  height: 1000%;
+}
+
+.titleContainer {
+  display: flex;
+  margin: 0 0 20px 18px;
+}
+
+.titleContainer > h1 {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 20px 0 0;
+  color: #C4C4C4;
+}

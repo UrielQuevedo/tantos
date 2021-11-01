@@ -2,13 +2,9 @@ html,
 body {
   font-family: 'Montserrat', sans-serif !important;
   background-color: #2D4B9E !important;
-  overflow: hidden;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-body {
-  position: relative;
-}
 
 * {
   margin: 0;
@@ -16,6 +12,7 @@ body {
 }
 
 #__next {
+  min-height: 100vh;
   height: 100vh;
   display: flex;
   flex-direction: column;

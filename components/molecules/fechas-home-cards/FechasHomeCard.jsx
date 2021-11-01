@@ -1,24 +1,23 @@
-import { PARTIDOS_MOCKUP } from "../../../__mockup/partidos.js";
 import PartidoCard from "../partido-card/PartidoCard.jsx";
 import ShowCards from "../../organisms/show-cards/ShowCards.jsx";
 import { CREAR_PARTIDO_URL, goTo } from "../../../utils/routes.js";
 import { useRouter } from "next/router";
 
-const INFO_TEXT = "En esta sección podra ver los últimos partidos jugados.";
+const INFO_TEXT = "En esta sección podra ver los proximos partidos a jugar.";
 
-const PartidosCard = () => {
+const FechasHomeCard = () => {
   const router = useRouter();
 
   return (
     <ShowCards
       ItemCard={PartidoCard}
-      items={PARTIDOS_MOCKUP}
+      items={[]}
       infoText={INFO_TEXT}
       onClickButton={() => goTo(CREAR_PARTIDO_URL, router)}
-      notContentText="partidos creados"
-      textButton="crear partido"
+      notContentText="fechas creadas"
+      textButton="crear fecha"
     />
   );
 };
 
-export default PartidosCard;
+export default FechasHomeCard;

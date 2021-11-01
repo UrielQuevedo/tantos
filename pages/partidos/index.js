@@ -4,25 +4,18 @@ import BigTitle from "../../components/atoms/big-title/BigTitle";
 import Card from "../../components/atoms/card/Card.jsx";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import {
-  containerMotion,
-  imageMotion,
-  titleMotion,
-  buttonMotion,
-} from "../../utils/constants";
+import { imageMotion, titleMotion, buttonMotion } from "../../utils/constants";
 import PlayerCard from "../../components/molecules/player-card/PlayerCard";
-import PartidosCard from "../../components/molecules/partidos-card/PartidosCard";
-import { PARTIDOS_MOCKUP } from "../../__mockup/partidos.js";
+import HomeCards from "../../components/organisms/home-cards/HomeCards";
 import { Button } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 import { CREAR_PARTIDO_URL, goTo } from "../../utils/routes";
 
 const TITLE = "Partidos";
-const { container, tablero, addButton } = Styles;
+const { tablero } = Styles;
 
 const Partidos = () => {
-  const [partidos, setPartidos] = useState([...PARTIDOS_MOCKUP]);
   const router = useRouter();
 
   return (
@@ -36,18 +29,7 @@ const Partidos = () => {
           {...imageMotion}
         />
       </motion.section>
-      <motion.section className={container} {...containerMotion}>
-        <PartidosCard partidos={partidos} />
-      </motion.section>
-      <motion.div {...buttonMotion}>
-        <Button
-          type="dashed"
-          shape="circle"
-          icon={<PlusOutlined />}
-          className={addButton}
-          onClick={() => goTo(CREAR_PARTIDO_URL, router)}
-        />
-      </motion.div>
+      <HomeCards />
     </HeaderLayout>
   );
 };
