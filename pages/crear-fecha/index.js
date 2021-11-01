@@ -1,9 +1,9 @@
 import PlantillaLayoutForm from "../../components/layouts/plantilla-form-layout/PlantillaFormLayout";
 import { PARTIDOS_URL } from "../../utils/routes";
 
-const TITLE = "Jugador";
+const TITLE = "Crear Fecha";
 
-const Jugador = () => {
+const CrearFecha = () => {
   return (
     <PlantillaLayoutForm redirect={PARTIDOS_URL} title={TITLE}>
       <h1>{TITLE}</h1>
@@ -11,4 +11,4 @@ const Jugador = () => {
   );
 };
 
-export default Jugador;
+export default CrearFecha;

@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   align-content: center;
+  flex-direction: column;
   justify-content:flex-start;
   padding: 17px 24px;
 
@@ -30,7 +31,7 @@
     width: 1px;
     background: rgba(125, 135, 242, 0.4);
     height: 50px;
-    margin: 0 20px;
+    margin: 12px 20px;
   }
 
   .dividerName {
@@ -72,7 +73,7 @@
 }
 
 .clubName {
-  font-size: 14px;
+  font-size: 16px;
   color: #FFF7D6;
 }
 

@@ -1,11 +1,14 @@
 import Styles from "./_style.module.scss";
 import Tanto from "../../atoms/tanto/Tanto";
+import { goTo, JUGADOR_URL } from "../../../utils/routes";
+import { useRouter } from "next/router";
 
 const { playerCard, name, lastname, club } = Styles;
 
 const PlayerCard = () => {
+  const router = useRouter();
   return (
-    <div className={playerCard}>
+    <div className={playerCard} onClick={() => goTo(JUGADOR_URL, router)}>
       <div
         style={{
           display: "flex",

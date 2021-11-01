@@ -2,7 +2,7 @@ import PlantillaLayoutForm from "../../components/layouts/plantilla-form-layout/
 import PlanillaForm from "../../components/organisms/planilla-form/PlanillaForm";
 import CrearPartidoForm from "../../components/molecules/crear-partido-form/CrearPartidoForm";
 import { useRouter } from "next/router";
-import { goTo, PARTIDOS_URL } from "../../utils/routes";
+import { goTo, PARTIDOS_URL, TIEMPOS_URL } from "../../utils/routes";
 const TITLE = "Crear Partido";
 
 const CrearPartido = () => {
@@ -11,7 +11,7 @@ const CrearPartido = () => {
   const handleOk = (values) => {
     //TODO: Guardar datos
     console.log(values);
-    goTo(PARTIDOS_URL, router);
+    goTo(TIEMPOS_URL, router);
     form.resetFields();
   };
 
